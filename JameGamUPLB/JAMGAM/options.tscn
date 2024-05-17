@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx07xfu4vqtjh"]
+
+[ext_resource type="Script" path="res://JAMGAM/Options.gd" id="1_g7bir"]
+
+[node name="Options" type="Control"]
+custom_minimum_size = Vector2(150, 75)
+layout_direction = 2
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.9999
+offset_top = -37.0
+offset_right = 65.0001
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3675, 1)
+size_flags_vertical = 4
+script = ExtResource("1_g7bir")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -156.0
+offset_bottom = 156.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+
+[node name="Video" type="Button" parent="CenterContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(150, 75)
+layout_direction = 2
+layout_mode = 2
+focus_neighbor_top = NodePath("../Back")
+focus_neighbor_bottom = NodePath(".")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Graphics"
+
+[node name="Audio" type="Button" parent="CenterContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(150, 75)
+layout_direction = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Audio"
+
+[node name="Guide" type="Button" parent="CenterContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(150, 75)
+layout_direction = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Guide"
+
+[node name="Back" type="Button" parent="CenterContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(150, 75)
+layout_direction = 2
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Video")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Back"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Video" to="." method="_on_video_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Guide" to="." method="_on_guide_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

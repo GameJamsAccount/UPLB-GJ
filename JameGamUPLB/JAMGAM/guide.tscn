@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://bucxmj047a5un"]
+
+[ext_resource type="Script" path="res://JAMGAM/guide.gd" id="1_q0e7a"]
+
+[node name="Guide" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q0e7a")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 37.0
+offset_right = 1050.0
+offset_bottom = 511.0
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Controls: 
+W / Arrow-UP = forward
+A / Arrow-Left = Left
+S / Arrow-Down = Down
+D / Arrow-Right  = Right
+Space = Jump
+Left Click = Light Attack
+Right Click = Hard/Hold Attack
+1 = Seed
+2 = Scythe"
+placeholder_text = "Controls: 
+W / Arrow-UP = forward
+A / Arrow-Left = Left
+S / Arrow-Down = Down
+D / Arrow-Right  = Right
+Space = Jump
+Left Click = Light Attack
+Right Click = Hard/Hold Attack
+1 = Seed
+2 = Scythe"
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+
+[node name="Back" type="Button" parent="."]
+custom_minimum_size = Vector2(200, 85)
+layout_mode = 0
+offset_left = 511.0
+offset_top = 541.0
+offset_right = 711.0
+offset_bottom = 626.0
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
