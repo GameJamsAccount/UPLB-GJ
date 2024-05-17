@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://dapi3033b7ful"]
+
+[ext_resource type="Texture2D" uid="uid://cpxh261070c6c" path="res://TestSprites/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_oy5o7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vev58"]
+size = Vector2(16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvms1"]
+atlas = ExtResource("1_oy5o7")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3rnx"]
+atlas = ExtResource("1_oy5o7")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5lyu"]
+atlas = ExtResource("1_oy5o7")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ys46p"]
+atlas = ExtResource("1_oy5o7")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5jjer"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvms1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3rnx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5lyu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ys46p")
+}],
+"loop": true,
+"name": &"sliemd",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_vev58")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5jjer")
+animation = &"sliemd"
+autoplay = "sliemd"
+frame = 2
+frame_progress = 0.863303
+flip_h = true

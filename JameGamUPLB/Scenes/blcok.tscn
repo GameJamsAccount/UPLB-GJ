@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch4cnh3qod6hv"]
+
+[ext_resource type="Texture2D" uid="uid://2j3wr3wy44u2" path="res://TestSprites/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_2s4m1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_id38p"]
+size = Vector2(16, 16)
+
+[node name="Blcok" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -1)
+texture = ExtResource("1_2s4m1")
+hframes = 16
+vframes = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_id38p")
