@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2rvav065qmdb"]
+
+[ext_resource type="Script" path="res://Scripts/test_scene.gd" id="1_7n33u"]
+[ext_resource type="Texture2D" uid="uid://bwsup6hsbsrag" path="res://TestSprites/water.png" id="2_ayxpq"]
+[ext_resource type="Script" path="res://Scripts/ActionBar.gd" id="2_udspc"]
+[ext_resource type="PackedScene" uid="uid://2dn33se0utxd" path="res://Scenes/abilities.tscn" id="3_o17ta"]
+
+[node name="TestScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7n33u")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ActionBar" type="HBoxContainer" parent="."]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_udspc")
+
+[node name="Seed" parent="ActionBar" instance=ExtResource("3_o17ta")]
+layout_mode = 2
+
+[node name="Water" parent="ActionBar" instance=ExtResource("3_o17ta")]
+layout_mode = 2
+texture_normal = ExtResource("2_ayxpq")
+
+[node name="Debug" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

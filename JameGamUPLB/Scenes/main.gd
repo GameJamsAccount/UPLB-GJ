@@ -16,7 +16,7 @@ func new_game():
 	$Character.position = char_start_pos
 	$Character.velocity = Vector2i(0,0)
 	$Camera2D.position = cam_start_post
-	$StaticBody2D.position = Vector2i(0,0)
+	$StaticBody2D.position = Vector2i(0,-100)
 
 func _process(delta):
 	speed = start_speed

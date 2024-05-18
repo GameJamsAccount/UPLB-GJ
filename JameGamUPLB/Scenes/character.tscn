@@ -379,7 +379,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Water",
-"speed": 10.0
+"speed": 4.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qd2hd"]
@@ -432,7 +432,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"grow",
-"speed": 7.0
+"speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ragl"]
@@ -470,9 +470,11 @@ animation = &"grow"
 frame_progress = 0.236565
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 2.27015)
 shape = SubResource("RectangleShape2D_4ragl")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 6.62126)
 shape = SubResource("RectangleShape2D_tl730")

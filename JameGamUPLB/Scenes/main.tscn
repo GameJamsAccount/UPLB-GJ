@@ -4,29 +4,29 @@
 [ext_resource type="PackedScene" uid="uid://bqahe6efekenc" path="res://Scenes/main_bg.tscn" id="1_jwprh"]
 [ext_resource type="PackedScene" uid="uid://enuweh6l1a6d" path="res://Scenes/Floor.tscn" id="2_dkpq7"]
 [ext_resource type="PackedScene" uid="uid://buk0olwxg0mjd" path="res://Scenes/character.tscn" id="3_8cwr8"]
-[ext_resource type="PackedScene" uid="uid://dmpb1n7yp15j" path="res://Scenes/control.tscn" id="3_870nx"]
 [ext_resource type="PackedScene" uid="uid://vm4bktkxny5k" path="res://HealthBar/HealthBar.tscn" id="5_ad0nq"]
+[ext_resource type="PackedScene" uid="uid://b2rvav065qmdb" path="res://Scenes/test_scene.tscn" id="6_h5fqv"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_eoyq7")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_dkpq7")]
-position = Vector2(-5, 257)
+position = Vector2(-52, 35)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(963, 538)
 
-[node name="Control" parent="Camera2D" instance=ExtResource("3_870nx")]
-offset_left = -943.0
-offset_top = -523.0
-offset_right = -943.0
-offset_bottom = -523.0
-scale = Vector2(0.45019, 0.414248)
+[node name="TestScene" parent="Camera2D" instance=ExtResource("6_h5fqv")]
+offset_left = -963.0
+offset_top = -538.0
+offset_right = -963.0
+offset_bottom = -538.0
+scale = Vector2(0.419248, 0.372542)
 
 [node name="MainBG" parent="." instance=ExtResource("1_jwprh")]
 
 [node name="Character" parent="." instance=ExtResource("3_8cwr8")]
-position = Vector2(274, 877)
+position = Vector2(202, 674)
 
 [node name="HealthBar" parent="Character" instance=ExtResource("5_ad0nq")]
 offset_left = -22.7015

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://enuweh6l1a6d"]
 
-[ext_resource type="Texture2D" uid="uid://csndshks41r00" path="res://TestSprites/asdasdasd-removebg-preview.png" id="1_5do3p"]
+[ext_resource type="Texture2D" uid="uid://c7l0myurdtpww" path="res://TestSprites/para_thefloor_2.png" id="1_kc64n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tloyr"]
 size = Vector2(3848, 287)
@@ -8,12 +8,13 @@ size = Vector2(3848, 287)
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.999996, 759)
-scale = Vector2(2.77473, 1.733)
-texture = ExtResource("1_5do3p")
+position = Vector2(-115, 767)
+scale = Vector2(2.08446, 1.733)
+texture = ExtResource("1_kc64n")
 centered = false
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(1919, 928.5)
 shape = SubResource("RectangleShape2D_tloyr")

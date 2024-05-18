@@ -1,3 +1,9 @@
+Label
+HBoxContainer
+Panel
+Timer
+TextureProgressBar
+TextureButton
 AnimatedSprite2D
 Button
 GridContainer
@@ -6,9 +12,3 @@ VBoxContainer
 CenterContainer
 CollisionShape2D
 Sprite2D
-Area2D
-StaticBody2D
-Camera2D
-Node
-CharacterBody2D
-ParallaxLayer

@@ -14,3 +14,14 @@ res://Scenes/control.tscn
 res://Scenes/control.gd
 res://Scenes/Scythe.gd
 res://Scenes/character.gd
+res://new_script.gd
+res://Scenes/Water.gd
+res://TextureButton.gd
+res://Abilities.tscn
+res://test_scene.tscn
+res://ActionBar.gd
+res://abilities.tscn
+res://abilities.gd
+res://Scenes/abilities.tscn
+res://Scenes/test_scene.tscn
+res://Scenes/main.gd
