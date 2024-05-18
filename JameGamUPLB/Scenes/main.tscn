@@ -27,7 +27,7 @@ scale = Vector2(0.419248, 0.372542)
 [node name="MainBG" parent="." instance=ExtResource("1_jwprh")]
 
 [node name="Character" parent="." instance=ExtResource("3_8cwr8")]
-position = Vector2(202, 674)
+position = Vector2(253, 687)
 
 [node name="HealthBar" parent="Character" instance=ExtResource("5_ad0nq")]
 offset_left = -22.7015

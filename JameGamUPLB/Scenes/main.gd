@@ -1,6 +1,6 @@
 extends Node
 
-const char_start_pos:= Vector2i(150,485)
+const char_start_pos:= Vector2i(150,700)
 const cam_start_post:= Vector2i(900,324)
 
 @onready var pause_menu = $Camera2D/PauseMenu
@@ -19,7 +19,7 @@ func new_game():
 	$Character.position = char_start_pos
 	$Character.velocity = Vector2i(0,0)
 	$Camera2D.position = cam_start_post
-	$StaticBody2D.position = Vector2i(0,-100)
+	$StaticBody2D.position = Vector2i(0,-95)
 
 func _process(delta):
 	speed = start_speed

@@ -9,6 +9,3 @@ res://Scenes/enemy.tscn
 res://Scenes/abilities.tscn
 res://Scenes/test_scene.tscn
 res://Scenes/main.gd
-res://pause/pause_menu.tscn
-res://pause/pause_menu.gd
-res://JAMGAM/Options.gd
