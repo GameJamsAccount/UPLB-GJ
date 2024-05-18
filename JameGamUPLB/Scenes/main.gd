@@ -3,6 +3,9 @@ extends Node
 const char_start_pos:= Vector2i(150,485)
 const cam_start_post:= Vector2i(900,324)
 
+@onready var pause_menu = $Camera2D/PauseMenu
+var paused = false
+
 var speed: float
 const start_speed:float=10.0
 const max_speed: int=25
@@ -25,3 +28,7 @@ func _process(delta):
 	$Camera2D.position.x +=speed
 	if $Camera2D.position.x - $StaticBody2D.position.x > screen_size.x * 1.5:
 		$StaticBody2D.position.x += screen_size.x
+		
+	
+
+

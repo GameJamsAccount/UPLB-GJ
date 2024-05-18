@@ -1,8 +1,6 @@
 extends Control
 
 
-
-
 func _ready():
 	$CenterContainer/VBoxContainer/Video.grab_focus()	
 	

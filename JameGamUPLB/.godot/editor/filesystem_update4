@@ -1,10 +1,14 @@
-res://Scenes/Floor.tscn
-res://JAMGAM/menu.tscn
 res://Scenes/main.tscn
+res://JAMGAM/menu.tscn
 res://Scenes/main_bg.tscn
 res://Scenes/character.tscn
+res://Scenes/Floor.tscn
 res://Scenes/blcok.tscn
 res://Scenes/sign.tscn
 res://Scenes/enemy.tscn
 res://Scenes/abilities.tscn
 res://Scenes/test_scene.tscn
+res://Scenes/main.gd
+res://pause/pause_menu.tscn
+res://pause/pause_menu.gd
+res://JAMGAM/Options.gd
