@@ -181,7 +181,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Run",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -225,9 +225,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_p7c4k")
 }],
-"loop": true,
+"loop": false,
 "name": &"roll",
-"speed": 5.0
+"speed": 12.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_slbak"]
