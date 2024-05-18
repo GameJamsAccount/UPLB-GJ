@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bucxmj047a5un"]
+[gd_scene load_steps=3 format=3 uid="uid://bucxmj047a5un"]
 
 [ext_resource type="Script" path="res://JAMGAM/guide.gd" id="1_q0e7a"]
+[ext_resource type="AudioStream" uid="uid://v601qb5m8tln" path="res://Songs/MAIN.mp3" id="2_ihsvq"]
 
 [node name="Guide" type="Control"]
 layout_mode = 3
@@ -61,5 +62,10 @@ offset_top = 818.0
 offset_right = 1178.0
 offset_bottom = 945.0
 text = "Back"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ihsvq")
+volume_db = -3.755
+autoplay = true
 
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

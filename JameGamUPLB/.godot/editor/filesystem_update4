@@ -1,4 +1,7 @@
+res://global/main_menu.tscn
+res://global/main_menu.gd
 res://JAMGAM/menu.tscn
+res://JAMGAM/menu.gd
 res://JAMGAM/options.tscn
 res://JAMGAM/video.tscn
 res://JAMGAM/audio.tscn
@@ -10,3 +13,6 @@ res://Scenes/Floor.tscn
 res://Scenes/blcok.tscn
 res://Scenes/sign.tscn
 res://Scenes/enemy.tscn
+res://Scenes/main.gd
+res://pause/pause_menu.gd
+res://pause/pause_menu.tscn

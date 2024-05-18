@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cove0w774dss0"]
+[gd_scene load_steps=2 format=3 uid="uid://cove0w774dss0"]
 
 [ext_resource type="Script" path="res://JAMGAM/menu.gd" id="1_fjn6x"]
-[ext_resource type="AudioStream" uid="uid://v601qb5m8tln" path="res://Songs/MAIN.mp3" id="2_y6mwe"]
 
 [node name="Menu" type="Control"]
 texture_filter = 2
@@ -75,10 +74,6 @@ size_flags_stretch_ratio = 1.65
 focus_neighbor_bottom = NodePath("../Start")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Quit"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_y6mwe")
-autoplay = true
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]

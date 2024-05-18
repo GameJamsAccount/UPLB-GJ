@@ -14,6 +14,7 @@ var screen_size:Vector2i
 func _ready():
 	screen_size=get_window().size
 	new_game()
+	MainMenu.stop_music()
 	
 
 func new_game():

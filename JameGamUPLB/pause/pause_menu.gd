@@ -19,4 +19,5 @@ func _on_resume_pressed():
 
 func _on_quit_pressed():
 	_is_paused = false
+	MainMenu.restart_music()
 	get_tree().change_scene_to_file("res://JAMGAM/menu.tscn")
