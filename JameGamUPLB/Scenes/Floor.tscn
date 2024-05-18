@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://enuweh6l1a6d"]
 
-[ext_resource type="Texture2D" uid="uid://c7l0myurdtpww" path="res://TestSprites/para_thefloor_2.png" id="1_kc64n"]
+[ext_resource type="Texture2D" uid="uid://bvlkf3bbj206s" path="res://a.png" id="1_tub0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tloyr"]
 size = Vector2(3848, 287)
@@ -8,9 +8,9 @@ size = Vector2(3848, 287)
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-115, 767)
-scale = Vector2(2.08446, 1.733)
-texture = ExtResource("1_kc64n")
+position = Vector2(-80, 504)
+scale = Vector2(1, 1.679)
+texture = ExtResource("1_tub0d")
 centered = false
 flip_h = true
 

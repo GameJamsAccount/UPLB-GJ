@@ -11,7 +11,7 @@
 script = ExtResource("1_eoyq7")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_dkpq7")]
-position = Vector2(-52, 35)
+position = Vector2(-1, -1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(963, 538)
