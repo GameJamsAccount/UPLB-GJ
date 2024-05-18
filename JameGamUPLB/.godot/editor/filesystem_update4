@@ -10,8 +10,7 @@ res://Scenes/Floor.tscn
 res://Scenes/blcok.tscn
 res://Scenes/sign.tscn
 res://Scenes/enemy.tscn
-<<<<<<< HEAD
-res://HealthBar/HealthBar.tscn
-res://HealthBar/HealthBar.gd
-=======
->>>>>>> 789f8f35937578665eb7a1f6c38ef20cda14c599
+res://Scenes/control.tscn
+res://Scenes/control.gd
+res://Scenes/Scythe.gd
+res://Scenes/character.gd

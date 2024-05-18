@@ -1,6 +1,7 @@
-ProgressBar
 AnimatedSprite2D
 Button
+GridContainer
+ProgressBar
 VBoxContainer
 CenterContainer
 CollisionShape2D
@@ -11,5 +12,3 @@ Camera2D
 Node
 CharacterBody2D
 ParallaxLayer
-ParallaxBackground
-AnimationPlayer
