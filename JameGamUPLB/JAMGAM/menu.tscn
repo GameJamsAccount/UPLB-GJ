@@ -27,10 +27,10 @@ clip_contents = true
 custom_minimum_size = Vector2(200, 85)
 layout_direction = 2
 layout_mode = 0
-offset_left = 596.426
-offset_top = -299.221
-offset_right = 796.426
-offset_bottom = -36.2212
+offset_left = 2.9129
+offset_top = 113.164
+offset_right = 202.913
+offset_bottom = 376.164
 focus_neighbor_top = NodePath("VBoxContainer/Quit")
 focus_neighbor_bottom = NodePath("VBoxContainer/Start")
 

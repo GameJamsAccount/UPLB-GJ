@@ -13,17 +13,17 @@ grow_vertical = 2
 script = ExtResource("1_qwa0y")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-custom_minimum_size = Vector2(150, 200)
+custom_minimum_size = Vector2(300, 300)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -42.0
-offset_top = -38.5
-offset_right = 42.0
-offset_bottom = 38.5
+offset_left = -445.0
+offset_top = -276.0
+offset_right = 450.0
+offset_bottom = 274.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -68,10 +68,10 @@ layout_mode = 2
 custom_minimum_size = Vector2(150, 50)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.0381944
-anchor_top = 0.0108025
-anchor_right = 0.0529514
-anchor_bottom = 0.0401235
+anchor_left = 0.153646
+anchor_top = 0.525926
+anchor_right = 0.244792
+anchor_bottom = 0.555247
 offset_left = 545.0
 offset_top = 421.0
 offset_right = 590.0

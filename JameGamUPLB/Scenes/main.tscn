@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://duktm8vapaybr"]
+[gd_scene load_steps=6 format=3 uid="uid://duktm8vapaybr"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_eoyq7"]
 [ext_resource type="PackedScene" uid="uid://bqahe6efekenc" path="res://Scenes/main_bg.tscn" id="1_jwprh"]
 [ext_resource type="PackedScene" uid="uid://enuweh6l1a6d" path="res://Scenes/Floor.tscn" id="2_dkpq7"]
 [ext_resource type="PackedScene" uid="uid://buk0olwxg0mjd" path="res://Scenes/character.tscn" id="3_8cwr8"]
+[ext_resource type="PackedScene" uid="uid://vm4bktkxny5k" path="res://HealthBar/HealthBar.tscn" id="5_ad0nq"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_eoyq7")
@@ -18,3 +19,10 @@ position = Vector2(963, 538)
 
 [node name="Character" parent="." instance=ExtResource("3_8cwr8")]
 position = Vector2(274, 877)
+
+[node name="HealthBar" parent="Character" instance=ExtResource("5_ad0nq")]
+offset_left = -22.7015
+offset_top = -15.8154
+offset_right = -22.7015
+offset_bottom = -15.8154
+scale = Vector2(0.150251, 0.0960643)

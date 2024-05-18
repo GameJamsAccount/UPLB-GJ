@@ -7,19 +7,23 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = 116.0
+offset_right = -7.0
+offset_bottom = 116.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_q0e7a")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 layout_mode = 0
-offset_left = 173.0
-offset_top = 37.0
-offset_right = 1050.0
-offset_bottom = 511.0
+offset_left = 416.0
+offset_top = -7.0
+offset_right = 1585.0
+offset_bottom = 768.0
 theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
 theme_override_colors/font_readonly_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Controls: 
 W / Arrow-UP = forward
 A / Arrow-Left = Left
@@ -52,10 +56,10 @@ middle_mouse_paste_enabled = false
 [node name="Back" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 85)
 layout_mode = 0
-offset_left = 511.0
-offset_top = 541.0
-offset_right = 711.0
-offset_bottom = 626.0
+offset_left = 817.0
+offset_top = 818.0
+offset_right = 1178.0
+offset_bottom = 945.0
 text = "Back"
 
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
