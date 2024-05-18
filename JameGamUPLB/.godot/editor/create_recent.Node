@@ -1,3 +1,6 @@
+AudioStreamPlayer
+Timer
+AudioStreamPlayer2D
 CanvasLayer
 Button
 Label
@@ -7,9 +10,5 @@ VBoxContainer
 MarginContainer
 HBoxContainer
 Panel
-Timer
 TextureProgressBar
 TextureButton
-AnimatedSprite2D
-ProgressBar
-CenterContainer

@@ -15,6 +15,7 @@ func _ready():
 	screen_size=get_window().size
 	new_game()
 	
+
 func new_game():
 	$Character.position = char_start_pos
 	$Character.velocity = Vector2i(0,0)

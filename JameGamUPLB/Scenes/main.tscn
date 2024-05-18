@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://duktm8vapaybr"]
+[gd_scene load_steps=10 format=3 uid="uid://duktm8vapaybr"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_eoyq7"]
 [ext_resource type="PackedScene" uid="uid://bqahe6efekenc" path="res://Scenes/main_bg.tscn" id="1_jwprh"]
 [ext_resource type="PackedScene" uid="uid://enuweh6l1a6d" path="res://Scenes/Floor.tscn" id="2_dkpq7"]
 [ext_resource type="PackedScene" uid="uid://buk0olwxg0mjd" path="res://Scenes/character.tscn" id="3_8cwr8"]
 [ext_resource type="PackedScene" uid="uid://vm4bktkxny5k" path="res://HealthBar/HealthBar.tscn" id="5_ad0nq"]
-[ext_resource type="PackedScene" uid="uid://b2rvav065qmdb" path="res://Scenes/test_scene.tscn" id="6_h5fqv"]
+[ext_resource type="PackedScene" path="res://Scenes/test_scene.tscn" id="6_h5fqv"]
 [ext_resource type="PackedScene" uid="uid://g4o41fluwnd8" path="res://pause/pause_menu.tscn" id="7_4x08n"]
+[ext_resource type="AudioStream" uid="uid://cgw2shwjeq6of" path="res://Songs/BOSS.mp3" id="8_dntak"]
+[ext_resource type="Script" path="res://Scenes/AudioStreamPlayer.gd" id="9_sr233"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_eoyq7")
@@ -39,3 +41,9 @@ scale = Vector2(0.150251, 0.0960643)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("7_4x08n")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_dntak")
+autoplay = true
+mix_target = 1
+script = ExtResource("9_sr233")
