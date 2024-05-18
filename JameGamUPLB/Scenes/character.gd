@@ -5,6 +5,8 @@ const JUMP_SPD: int = -1800
 
 func _physics_process(delta):
 	velocity.y += GRAVITY * delta
+	if Input.is_action_pressed("Slash"):
+		$AnimatedSprite2D/AnimatedSprite2D2.play("default")
 	if is_on_floor():
 		$CollisionShape2D.disabled=false
 		if Input.is_action_pressed("Up"):

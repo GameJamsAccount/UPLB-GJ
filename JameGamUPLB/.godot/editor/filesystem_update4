@@ -10,3 +10,4 @@ res://Scenes/Floor.tscn
 res://Scenes/blcok.tscn
 res://Scenes/sign.tscn
 res://Scenes/enemy.tscn
+res://Scenes/character.gd
