@@ -1,6 +1,7 @@
+VideoStreamPlayer
+AudioStreamPlayer
 Timer
 Sprite2D
-AudioStreamPlayer
 AudioStreamPlayer2D
 Node2D
 ColorRect
@@ -11,4 +12,3 @@ AnimatedSprite2D
 Area2D
 Node
 AnimationPlayer
-Camera2D

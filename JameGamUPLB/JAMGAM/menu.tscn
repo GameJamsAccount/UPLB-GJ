@@ -1,40 +1,52 @@
-[gd_scene load_steps=2 format=3 uid="uid://cove0w774dss0"]
+[gd_scene load_steps=3 format=3 uid="uid://cove0w774dss0"]
 
 [ext_resource type="Script" path="res://JAMGAM/menu.gd" id="1_fjn6x"]
+[ext_resource type="VideoStream" path="res://Video/Arcade_Gamer.ogv" id="2_yyyei"]
 
 [node name="Menu" type="Control"]
 texture_filter = 2
 custom_minimum_size = Vector2(200, 85)
 layout_mode = 3
-anchor_left = 0.0041667
-anchor_top = 0.629231
-anchor_right = 0.23303
-anchor_bottom = 2.03157
-offset_left = -4.57764e-05
-offset_top = 5.0
-offset_right = -74.6361
-offset_bottom = 2.48212
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -522.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.37318, 1.01119)
 size_flags_horizontal = 0
 size_flags_vertical = 0
 script = ExtResource("1_fjn6x")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.000715308
+anchor_top = -0.000925926
+anchor_right = 1.37268
+anchor_bottom = 1.00648
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.728007, 0.980251)
+stream = ExtResource("2_yyyei")
+autoplay = true
+expand = true
+loop = true
 metadata/_edit_use_anchors_ = true
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="VideoStreamPlayer"]
 clip_contents = true
 custom_minimum_size = Vector2(200, 85)
 layout_direction = 2
 layout_mode = 0
-offset_left = 598.611
-offset_top = -296.254
-offset_right = 798.611
-offset_bottom = -33.2543
+offset_left = 449.515
+offset_top = 523.608
+offset_right = 649.515
+offset_bottom = 786.608
 focus_neighbor_top = NodePath("VBoxContainer/Quit")
 focus_neighbor_bottom = NodePath("VBoxContainer/Start")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VideoStreamPlayer/CenterContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(200, 85)
 layout_direction = 2
@@ -42,7 +54,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 6
 
-[node name="Start" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Start" type="Button" parent="VideoStreamPlayer/CenterContainer/VBoxContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(150, 85)
 layout_direction = 2
@@ -54,7 +66,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Start"
 text_direction = 1
 
-[node name="Options" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Options" type="Button" parent="VideoStreamPlayer/CenterContainer/VBoxContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(200, 85)
 layout_direction = 2
@@ -64,7 +76,7 @@ size_flags_stretch_ratio = 1.65
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Options"
 
-[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Quit" type="Button" parent="VideoStreamPlayer/CenterContainer/VBoxContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(200, 85)
 layout_direction = 2
@@ -75,6 +87,6 @@ focus_neighbor_bottom = NodePath("../Start")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 text = "Quit"
 
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/CenterContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/CenterContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

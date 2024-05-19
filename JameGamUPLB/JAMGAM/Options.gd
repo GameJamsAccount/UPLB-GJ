@@ -2,7 +2,7 @@ extends Control
 
 
 func _ready():
-	$CenterContainer/VBoxContainer/Video.grab_focus()	
+	pass
 	
 
 func _on_video_pressed():

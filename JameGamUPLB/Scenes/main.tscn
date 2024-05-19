@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://duktm8vapaybr"]
+[gd_scene load_steps=9 format=3 uid="uid://duktm8vapaybr"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_eoyq7"]
 [ext_resource type="PackedScene" uid="uid://bqahe6efekenc" path="res://Scenes/main_bg.tscn" id="1_jwprh"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://buk0olwxg0mjd" path="res://Scenes/character.tscn" id="3_8cwr8"]
 [ext_resource type="PackedScene" uid="uid://b2rvav065qmdb" path="res://Scenes/test_scene.tscn" id="6_h5fqv"]
 [ext_resource type="PackedScene" uid="uid://g4o41fluwnd8" path="res://pause/pause_menu.tscn" id="7_4x08n"]
+[ext_resource type="AudioStream" uid="uid://cgw2shwjeq6of" path="res://Songs/BOSS.mp3" id="8_mj0sy"]
 [ext_resource type="PackedScene" uid="uid://bvixf4fsklxde" path="res://Scenes/hud.tscn" id="10_60b4y"]
 
 [node name="Main" type="Node"]
@@ -35,3 +36,7 @@ position = Vector2(181, 775)
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("7_4x08n")]
 
 [node name="HUD" parent="." instance=ExtResource("10_60b4y")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_mj0sy")
+autoplay = true
