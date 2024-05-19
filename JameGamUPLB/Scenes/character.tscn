@@ -466,7 +466,6 @@ frame_progress = 1.0
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
 position = Vector2(2.30931e-06, 0)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_fq63w")
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
