@@ -1,16 +1,15 @@
-res://game_over.tscn
-res://game_over.gd
-res://Scenes/character.tscn
-res://Scenes/character.gd
 res://Scenes/enemy.tscn
+res://Scenes/enemy.gd
 res://JAMGAM/menu.tscn
 res://JAMGAM/Chapter.tscn
 res://JAMGAM/options.tscn
 res://JAMGAM/video.tscn
 res://JAMGAM/audio.tscn
 res://JAMGAM/guide.tscn
+res://game_over.tscn
 res://Scenes/main.tscn
 res://Scenes/main_bg.tscn
+res://Scenes/character.tscn
 res://Scenes/Floor.tscn
 res://Scenes/blcok.tscn
 res://Scenes/sign.tscn
@@ -18,3 +17,4 @@ res://global/main_menu.tscn
 res://HealthBar/HealthBar.tscn
 res://pause/pause_menu.tscn
 res://Scenes/abilities.tscn
+res://Scenes/character.gd

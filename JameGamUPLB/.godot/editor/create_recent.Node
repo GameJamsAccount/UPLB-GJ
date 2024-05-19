@@ -1,8 +1,9 @@
+CollisionShape2D
+Area2D
+RayCast2D
 Button
 Label
 CanvasLayer
-CollisionShape2D
-Area2D
 ProgressBar
 CenterContainer
 VBoxContainer
@@ -11,4 +12,3 @@ AudioStreamPlayer
 AudioStreamPlayer2D
 GridContainer
 ColorRect
-MarginContainer

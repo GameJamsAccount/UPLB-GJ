@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dapi3033b7ful"]
+[gd_scene load_steps=10 format=3 uid="uid://dapi3033b7ful"]
 
 [ext_resource type="Script" path="res://Scenes/enemy.gd" id="1_ol6a3"]
 [ext_resource type="Texture2D" uid="uid://cpxh261070c6c" path="res://TestSprites/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_oy5o7"]
@@ -42,6 +42,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xjgnv"]
+size = Vector2(19.1, 17.5)
+
 [node name="Enemy" type="Area2D"]
 scale = Vector2(10, 10)
 collision_layer = 16
@@ -60,4 +63,13 @@ frame = 2
 frame_progress = 0.863303
 flip_h = true
 
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 6
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-0.1, 3.4)
+shape = SubResource("RectangleShape2D_xjgnv")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
