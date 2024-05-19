@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://bygso6m6rhsij"]
+
+[ext_resource type="Texture2D" uid="uid://nxyki3ajwihj" path="res://Scenes/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/frost_guardian_free_192x128_SpriteSheet.png" id="1_70jjv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3ce8"]
+atlas = ExtResource("1_70jjv")
+region = Rect2(0, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_teen5"]
+atlas = ExtResource("1_70jjv")
+region = Rect2(192, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pt7cr"]
+atlas = ExtResource("1_70jjv")
+region = Rect2(384, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xshlu"]
+atlas = ExtResource("1_70jjv")
+region = Rect2(576, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f4e3p"]
+atlas = ExtResource("1_70jjv")
+region = Rect2(768, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjkuh"]
+atlas = ExtResource("1_70jjv")
+region = Rect2(960, 0, 192, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j24am"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3ce8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_teen5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pt7cr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xshlu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f4e3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjkuh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46spe"]
+size = Vector2(854, 922.5)
+
+[node name="Boss" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(7, 7)
+sprite_frames = SubResource("SpriteFrames_j24am")
+autoplay = "default"
+frame = 3
+frame_progress = 0.74916
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4.75)
+shape = SubResource("RectangleShape2D_46spe")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dukluys85ki2"]
+
+[ext_resource type="PackedScene" uid="uid://duktm8vapaybr" path="res://Scenes/main.tscn" id="1_40fu1"]
+[ext_resource type="Script" path="res://Scenes/chapter_1.gd" id="1_xx8ts"]
+[ext_resource type="Script" path="res://Scenes/AudioStreamPlayer.gd" id="3_onmct"]
+
+[node name="Chapter1" type="Node"]
+script = ExtResource("1_xx8ts")
+
+[node name="SceneChange" type="Node2D" parent="."]
+visible = false
+
+[node name="Main" parent="SceneChange" instance=ExtResource("1_40fu1")]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("3_onmct")

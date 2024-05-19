@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://duktm8vapaybr"]
+[gd_scene load_steps=8 format=3 uid="uid://duktm8vapaybr"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_eoyq7"]
 [ext_resource type="PackedScene" uid="uid://bqahe6efekenc" path="res://Scenes/main_bg.tscn" id="1_jwprh"]
@@ -6,8 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://buk0olwxg0mjd" path="res://Scenes/character.tscn" id="3_8cwr8"]
 [ext_resource type="PackedScene" uid="uid://b2rvav065qmdb" path="res://Scenes/test_scene.tscn" id="6_h5fqv"]
 [ext_resource type="PackedScene" uid="uid://g4o41fluwnd8" path="res://pause/pause_menu.tscn" id="7_4x08n"]
-[ext_resource type="AudioStream" uid="uid://cgw2shwjeq6of" path="res://Songs/BOSS.mp3" id="8_dntak"]
-[ext_resource type="Script" path="res://Scenes/AudioStreamPlayer.gd" id="9_sr233"]
 [ext_resource type="PackedScene" uid="uid://bvixf4fsklxde" path="res://Scenes/hud.tscn" id="10_60b4y"]
 
 [node name="Main" type="Node"]
@@ -25,6 +23,7 @@ offset_top = -538.0
 offset_right = -963.0
 offset_bottom = -538.0
 scale = Vector2(0.419248, 0.372542)
+metadata/_edit_use_anchors_ = true
 
 [node name="MainBG" parent="." instance=ExtResource("1_jwprh")]
 
@@ -34,11 +33,5 @@ position = Vector2(181, 775)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("7_4x08n")]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("8_dntak")
-autoplay = true
-mix_target = 1
-script = ExtResource("9_sr233")
 
 [node name="HUD" parent="." instance=ExtResource("10_60b4y")]

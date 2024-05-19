@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dukluys85ki2"]
+
+[ext_resource type="AudioStream" uid="uid://cgw2shwjeq6of" path="res://Songs/BOSS.mp3" id="1_1w6mc"]
+[ext_resource type="PackedScene" uid="uid://duktm8vapaybr" path="res://Scenes/main.tscn" id="1_40fu1"]
+[ext_resource type="Script" path="res://Scenes/chapter_1.gd" id="1_xx8ts"]
+[ext_resource type="Script" path="res://Scenes/AudioStreamPlayer.gd" id="3_onmct"]
+[ext_resource type="PackedScene" uid="uid://caymktridco71" path="res://Scenes/transition.tscn" id="4_gvo1s"]
+
+[node name="Chapter1" type="Node"]
+script = ExtResource("1_xx8ts")
+
+[node name="SceneChange" type="Node2D" parent="."]
+visible = false
+
+[node name="Main" parent="SceneChange" instance=ExtResource("1_40fu1")]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 37.0
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_1w6mc")
+autoplay = true
+script = ExtResource("3_onmct")
+
+[node name="Transition" parent="." instance=ExtResource("4_gvo1s")]
+
+[node name="TBC" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="CloseGame" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="transitioned" from="Transition" to="." method="_on_transition_transitioned"]
+[connection signal="timeout" from="TBC" to="." method="_on_tbc_timeout"]
+[connection signal="timeout" from="CloseGame" to="." method="_on_close_game_timeout"]

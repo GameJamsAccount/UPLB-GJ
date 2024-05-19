@@ -49,21 +49,10 @@ func _process(_delta):
 	if $Camera2D.position.x - $StaticBody2D.position.x > screen_size.x * 1.5:
 		$StaticBody2D.position.x += screen_size.x
 func generate_obs():
-	if obstacles.is_empty() or last_obs.position.x < asd + randi_range(300,500):
-		var obs_type = obstacle_type[randi()%obstacle_type.size()]
 		var obs
-		var max_obs=3
-		for i in range(randi() % max_obs * 1):
-			obs=obs_type.instantiate()
-			var obs_height=obs.get_node("Sprite2D").texture.get_height()
-			var obs_scale=obs.get_node("Sprite2D").scale
-			var obs_x: int = screen_size.x + asd + 100 + (i*100)
-			var obs_y: int = screen_size.y - ground_height - (obs_height * obs_scale.y / 2) + 5
-			last_obs=obs
-			add_obs(obs, obs_x, obs_y)
 		if (randi()&2)==0:
 			obs = emeny.instantiate()
-			var obs_x : int = screen_size.x + asd +100
+			var obs_x : int = screen_size.x + asd + 300
 			var obs_y : int = bird_height[randi() % bird_height.size()]
 			add_obs(obs,obs_x,obs_y)
 			

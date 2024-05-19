@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bhueetl2baxma"]
+
+[node name="to be continued" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1925.0
+offset_bottom = 1559.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -612.5
+offset_top = -85.5
+offset_right = 612.5
+offset_bottom = 85.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 125
+text = "TO BE CONTINUED..."
+horizontal_alignment = 1

@@ -1,41 +1,34 @@
-[gd_scene load_steps=10 format=3 uid="uid://dapi3033b7ful"]
+[gd_scene load_steps=9 format=3 uid="uid://dapi3033b7ful"]
 
 [ext_resource type="Script" path="res://Scenes/enemy.gd" id="1_ol6a3"]
-[ext_resource type="Texture2D" uid="uid://cpxh261070c6c" path="res://TestSprites/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_oy5o7"]
+[ext_resource type="Texture2D" uid="uid://dot0tdeqtp3gx" path="res://Scenes/spritesheet_3.png" id="2_jnyea"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vev58"]
 size = Vector2(16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nvms1"]
-atlas = ExtResource("1_oy5o7")
-region = Rect2(72, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbkx5"]
+atlas = ExtResource("2_jnyea")
+region = Rect2(0, 0, 215, 228)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u3rnx"]
-atlas = ExtResource("1_oy5o7")
-region = Rect2(72, 24, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qcum"]
+atlas = ExtResource("2_jnyea")
+region = Rect2(215, 0, 215, 228)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_c5lyu"]
-atlas = ExtResource("1_oy5o7")
-region = Rect2(48, 24, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ys46p"]
-atlas = ExtResource("1_oy5o7")
-region = Rect2(24, 24, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv0ge"]
+atlas = ExtResource("2_jnyea")
+region = Rect2(0, 228, 215, 228)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5jjer"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nvms1")
+"texture": SubResource("AtlasTexture_bbkx5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_u3rnx")
+"texture": SubResource("AtlasTexture_4qcum")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_c5lyu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ys46p")
+"texture": SubResource("AtlasTexture_nv0ge")
 }],
 "loop": true,
 "name": &"sliemd",
@@ -56,12 +49,12 @@ position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_vev58")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.8, 7.2)
+scale = Vector2(0.100233, 0.103728)
 sprite_frames = SubResource("SpriteFrames_5jjer")
 animation = &"sliemd"
 autoplay = "sliemd"
-frame = 2
-frame_progress = 0.863303
-flip_h = true
+frame_progress = 0.191249
 
 [node name="Hitbox" type="Area2D" parent="."]
 collision_layer = 6
