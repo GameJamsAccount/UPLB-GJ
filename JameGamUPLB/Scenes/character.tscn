@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://buk0olwxg0mjd"]
+[gd_scene load_steps=67 format=3 uid="uid://buk0olwxg0mjd"]
 
 [ext_resource type="Texture2D" uid="uid://rtcjogn6txej" path="res://TestSprites/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png" id="1_e60lr"]
 [ext_resource type="Script" path="res://Scenes/character.gd" id="1_wktub"]
@@ -233,6 +233,66 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvgrw"]
+atlas = ExtResource("5_yy53s")
+region = Rect2(144, 0, 144, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3n3k"]
+atlas = ExtResource("5_yy53s")
+region = Rect2(0, 0, 192, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qm6mm"]
+atlas = ExtResource("5_yy53s")
+region = Rect2(192, 0, 192, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4e5x"]
+atlas = ExtResource("5_yy53s")
+region = Rect2(384, 0, 192, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4irx"]
+atlas = ExtResource("5_yy53s")
+region = Rect2(0, 180, 192, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t14g5"]
+atlas = ExtResource("5_yy53s")
+region = Rect2(192, 180, 192, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jg22y"]
+atlas = ExtResource("5_yy53s")
+region = Rect2(384, 180, 192, 180)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mj1o7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvgrw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3n3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qm6mm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4e5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4irx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t14g5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jg22y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvgrw")
+}],
+"loop": false,
+"name": &"Water",
+"speed": 4.0
+}]
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_slbak"]
 atlas = ExtResource("3_s8tmj")
 region = Rect2(0, 0, 37, 27)
@@ -322,66 +382,6 @@ animations = [{
 "speed": 15.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jvgrw"]
-atlas = ExtResource("5_yy53s")
-region = Rect2(144, 0, 144, 60)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x3n3k"]
-atlas = ExtResource("5_yy53s")
-region = Rect2(0, 0, 192, 180)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qm6mm"]
-atlas = ExtResource("5_yy53s")
-region = Rect2(192, 0, 192, 180)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j4e5x"]
-atlas = ExtResource("5_yy53s")
-region = Rect2(384, 0, 192, 180)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p4irx"]
-atlas = ExtResource("5_yy53s")
-region = Rect2(0, 180, 192, 180)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t14g5"]
-atlas = ExtResource("5_yy53s")
-region = Rect2(192, 180, 192, 180)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jg22y"]
-atlas = ExtResource("5_yy53s")
-region = Rect2(384, 180, 192, 180)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mj1o7"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jvgrw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x3n3k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qm6mm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j4e5x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p4irx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_t14g5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jg22y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jvgrw")
-}],
-"loop": false,
-"name": &"Water",
-"speed": 4.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_qd2hd"]
 atlas = ExtResource("6_tus5l")
 region = Rect2(0, 0, 156, 94)
@@ -441,20 +441,22 @@ size = Vector2(20, 19.9773)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tl730"]
 size = Vector2(20, 10.9724)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvy8e"]
+size = Vector2(10.2592, 28.1612)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybynq"]
+size = Vector2(20, 6.06508)
+
 [node name="Character" type="CharacterBody2D"]
 scale = Vector2(13.215, 13.215)
 script = ExtResource("1_wktub")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ycpc7")
-animation = &"died"
+animation = &"roll"
 autoplay = "Run"
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_fq63w")
-animation = &"thrust"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
 position = Vector2(36.0953, 5.75104)
 scale = Vector2(0.252319, 0.154988)
 sprite_frames = SubResource("SpriteFrames_mj1o7")
@@ -463,6 +465,11 @@ frame = 7
 frame_progress = 1.0
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
+position = Vector2(2.30931e-06, 0)
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_fq63w")
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
 position = Vector2(25.123, -6.28074)
 scale = Vector2(0.13756, 0.146031)
 sprite_frames = SubResource("SpriteFrames_nvvpc")
@@ -478,3 +485,23 @@ shape = SubResource("RectangleShape2D_4ragl")
 visible = false
 position = Vector2(0, 6.62126)
 shape = SubResource("RectangleShape2D_tl730")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 24
+
+[node name="Attack1" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(19.6585, 0.826712)
+shape = SubResource("RectangleShape2D_qvy8e")
+disabled = true
+
+[node name="Attack2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(35.3386, 1.13507)
+shape = SubResource("RectangleShape2D_ybynq")
+disabled = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

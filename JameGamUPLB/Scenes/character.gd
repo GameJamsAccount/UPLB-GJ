@@ -2,17 +2,29 @@ extends CharacterBody2D
 
 const GRAVITY : int  = 4200
 const JUMP_SPD: int = -1800
+var can_attack = true
 
 func _physics_process(delta):
 	velocity.y += GRAVITY * delta
+	$Area2D/Attack1.disabled=true
+	$Area2D/Attack2.disabled=true
 	if Input.is_action_pressed("MainAction"):
-		$AnimatedSprite2D/AnimatedSprite2D2.play("default")
-	elif Input.is_action_pressed("SecondaryAction"):
-		$AnimatedSprite2D/AnimatedSprite2D2.play("thrust")
-	elif Input.is_action_pressed("Seed1"):
-		$AnimatedSprite2D/AnimatedSprite2D3.play("grow")
-	elif Input.is_action_pressed("Water2"):
-		$AnimatedSprite2D/AnimatedSprite2D.play("Water")
+		$AnimatedSprite2D/AnimatedSprite2D3.play("default")
+		$Area2D/Attack1.disabled=false
+	if can_attack:
+		if Input.is_action_pressed("SecondaryAction"):
+			$AnimatedSprite2D/AnimatedSprite2D3.play("thrust")
+			$Area2D/Attack2.disabled=false
+			can_attack = false
+			$Timer.start()
+		elif Input.is_action_pressed("Seed1"):
+			$AnimatedSprite2D/AnimatedSprite2D4.play("grow")
+			can_attack = false
+			$Timer.start()
+		elif Input.is_action_pressed("Water2"):
+			$AnimatedSprite2D/AnimatedSprite2D2.play("Water")
+			can_attack = false
+			$Timer.start()
 	
 	if is_on_floor():
 		$CollisionShape2D.disabled=false
@@ -26,3 +38,6 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite2D.play("Jump")
 	move_and_slide()
+
+func _on_timer_timeout():
+	can_attack = true

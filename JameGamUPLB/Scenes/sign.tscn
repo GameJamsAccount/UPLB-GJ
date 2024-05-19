@@ -6,6 +6,7 @@
 size = Vector2(16, 16)
 
 [node name="Sign" type="Area2D"]
+scale = Vector2(9.98048, 10)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_gt00r")

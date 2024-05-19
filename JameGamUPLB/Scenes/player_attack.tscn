@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2druo2la2fqa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p743s"]
+size = Vector2(10.2592, 28.1612)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_v4b8m"]
+b = Vector2(43.8895, 0.151343)
+
+[node name="PlayerAttack" type="Area2D"]
+
+[node name="Attack1" type="CollisionShape2D" parent="."]
+position = Vector2(19.6585, 0.826712)
+shape = SubResource("RectangleShape2D_p743s")
+
+[node name="Attack2" type="CollisionShape2D" parent="."]
+position = Vector2(-6.1294, 1.96746)
+shape = SubResource("SegmentShape2D_v4b8m")
