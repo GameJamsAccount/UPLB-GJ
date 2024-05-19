@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dukluys85ki2"]
+[gd_scene load_steps=7 format=3 uid="uid://dukluys85ki2"]
 
 [ext_resource type="AudioStream" uid="uid://cgw2shwjeq6of" path="res://Songs/BOSS.mp3" id="1_1w6mc"]
 [ext_resource type="PackedScene" uid="uid://duktm8vapaybr" path="res://Scenes/main.tscn" id="1_40fu1"]
 [ext_resource type="Script" path="res://Scenes/chapter_1.gd" id="1_xx8ts"]
 [ext_resource type="Script" path="res://Scenes/AudioStreamPlayer.gd" id="3_onmct"]
 [ext_resource type="PackedScene" uid="uid://caymktridco71" path="res://Scenes/transition.tscn" id="4_gvo1s"]
+[ext_resource type="PackedScene" uid="uid://g4o41fluwnd8" path="res://pause/pause_menu.tscn" id="6_5el33"]
 
 [node name="Chapter1" type="Node"]
 script = ExtResource("1_xx8ts")
@@ -32,6 +33,10 @@ one_shot = true
 [node name="CloseGame" type="Timer" parent="."]
 wait_time = 5.0
 one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("6_5el33")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="transitioned" from="Transition" to="." method="_on_transition_transitioned"]

@@ -19,3 +19,6 @@ res://Scenes/static.tscn
 res://Scenes/player_attack.tscn
 res://Scenes/hud.tscn
 res://Scenes/test_scene.tscn
+res://pause/pause_menu.tscn
+res://Scenes/main.gd
+res://pause/pause_menu.gd

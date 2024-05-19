@@ -10,7 +10,7 @@ var bird_height:= [200,390]
 const char_start_pos:= Vector2i(150,700)
 const cam_start_post:= Vector2i(900,324)
 
-@onready var pause_menu = $Camera2D/PauseMenu
+@onready var pause_menu = $CanvasLayer/PauseMenu
 var paused = false
 
 var score: int

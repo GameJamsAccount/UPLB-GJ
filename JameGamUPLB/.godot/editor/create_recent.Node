@@ -1,3 +1,4 @@
+CanvasLayer
 VideoStreamPlayer
 AudioStreamPlayer
 Timer
@@ -6,7 +7,6 @@ AudioStreamPlayer2D
 Node2D
 ColorRect
 Label
-CanvasLayer
 CollisionShape2D
 AnimatedSprite2D
 Area2D

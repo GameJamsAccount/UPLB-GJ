@@ -13,11 +13,12 @@ func _unhandled_input(event: InputEvent) ->void:
 		_is_paused = !_is_paused
 	
 
-func _on_resume_pressed():
-	_is_paused = false
-
 
 func _on_quit_pressed():
 	_is_paused = false
 	MainMenu.restart_music()
 	get_tree().change_scene_to_file("res://JAMGAM/menu.tscn")
+
+
+func _on_resume_pressed():
+	_is_paused = false
