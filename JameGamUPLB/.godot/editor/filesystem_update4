@@ -16,6 +16,6 @@ res://Scenes/to_be_continued.tscn
 res://global/main_menu.tscn
 res://HealthBar/HealthBar.tscn
 res://Scenes/static.tscn
-res://JAMGAM/menu.gd
-res://JAMGAM/Options.gd
-res://JAMGAM/Chapter.gd
+res://Scenes/player_attack.tscn
+res://Scenes/hud.tscn
+res://Scenes/test_scene.tscn

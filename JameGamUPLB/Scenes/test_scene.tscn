@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2rvav065qmdb"]
+[gd_scene load_steps=5 format=3 uid="uid://b2rvav065qmdb"]
 
-[ext_resource type="Texture2D" uid="uid://bwsup6hsbsrag" path="res://TestSprites/water.png" id="2_ayxpq"]
 [ext_resource type="Script" path="res://Scripts/ActionBar.gd" id="2_udspc"]
 [ext_resource type="PackedScene" uid="uid://2dn33se0utxd" path="res://Scenes/abilities.tscn" id="3_o17ta"]
+[ext_resource type="Texture2D" uid="uid://dsqjahl7tfksf" path="res://Scenes/awdawdawdawdawdawdawd.png" id="3_rdbfr"]
+[ext_resource type="Texture2D" uid="uid://spe0eiw14g6w" path="res://Scenes/awdwadwadawd.png" id="4_bxxut"]
 
 [node name="TestScene" type="Control"]
 layout_mode = 3
@@ -28,10 +29,11 @@ script = ExtResource("2_udspc")
 
 [node name="Seed" parent="ActionBar" instance=ExtResource("3_o17ta")]
 layout_mode = 2
+texture_normal = ExtResource("3_rdbfr")
 
 [node name="Water" parent="ActionBar" instance=ExtResource("3_o17ta")]
 layout_mode = 2
-texture_normal = ExtResource("2_ayxpq")
+texture_normal = ExtResource("4_bxxut")
 
 [node name="Debug" type="Label" parent="."]
 visible = false
