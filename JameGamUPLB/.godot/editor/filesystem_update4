@@ -1,3 +1,4 @@
+res://Scenes/chapter_1.tscn
 res://JAMGAM/menu.tscn
 res://JAMGAM/Chapter.tscn
 res://JAMGAM/options.tscn
@@ -8,7 +9,6 @@ res://Scenes/character.tscn
 res://Scenes/main.tscn
 res://Songs/boss_scene.tscn
 res://Scenes/abilities.tscn
-res://Scenes/chapter_1.tscn
 res://Scenes/transition.tscn
 res://Scenes/boss.tscn
 res://Scenes/enemy.tscn
@@ -20,5 +20,3 @@ res://Scenes/player_attack.tscn
 res://Scenes/hud.tscn
 res://Scenes/test_scene.tscn
 res://pause/pause_menu.tscn
-res://Scenes/main.gd
-res://pause/pause_menu.gd
