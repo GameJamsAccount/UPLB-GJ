@@ -21,3 +21,6 @@ func _catch_up_change(Healthbar, changeValue):
 		await get_tree().create_timer(0.05).timeout
 		if changeValue < 0 : Healthbar.value -= 1
 		elif changeValue > 0 : Healthbar.value += 1
+		
+
+	

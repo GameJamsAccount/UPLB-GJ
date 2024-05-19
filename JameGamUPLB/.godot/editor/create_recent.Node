@@ -1,8 +1,8 @@
+CollisionShape2D
+Area2D
 CenterContainer
 VBoxContainer
 Button
-Area2D
-CollisionShape2D
 Label
 CanvasLayer
 Timer
@@ -12,4 +12,3 @@ GridContainer
 ColorRect
 MarginContainer
 HBoxContainer
-Panel

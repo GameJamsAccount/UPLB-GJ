@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://buk0olwxg0mjd"]
+[gd_scene load_steps=68 format=3 uid="uid://buk0olwxg0mjd"]
 
 [ext_resource type="Texture2D" uid="uid://rtcjogn6txej" path="res://TestSprites/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png" id="1_e60lr"]
 [ext_resource type="Script" path="res://Scenes/character.gd" id="1_wktub"]
@@ -447,6 +447,9 @@ size = Vector2(10.2592, 28.1612)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ybynq"]
 size = Vector2(20, 6.06508)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2ou3"]
+size = Vector2(12.0318, 15.2913)
+
 [node name="Character" type="CharacterBody2D"]
 scale = Vector2(13.215, 13.215)
 script = ExtResource("1_wktub")
@@ -502,5 +505,11 @@ disabled = true
 position = Vector2(35.3386, 1.13507)
 shape = SubResource("RectangleShape2D_ybynq")
 disabled = true
+
+[node name="Damage" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage"]
+position = Vector2(0.0378357, 4.23761)
+shape = SubResource("RectangleShape2D_d2ou3")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
