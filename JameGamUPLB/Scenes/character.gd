@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+
 @onready var healthbar =$Healthbar2
 
 const GRAVITY : int  = 4200
@@ -52,7 +53,7 @@ func _on_timer_timeout():
 	
 func take_damage(damage:int):
 	health -= damage
-	if health < 0: get_tree().quit()
+	if health < 0: get_tree().change_scene_to_file("res://game_over.tscn")
 	healthbar.change_health(-damage)
 	
-
+	

@@ -1,11 +1,11 @@
+Button
+Label
+CanvasLayer
 CollisionShape2D
 Area2D
 ProgressBar
 CenterContainer
 VBoxContainer
-Button
-Label
-CanvasLayer
 Timer
 AudioStreamPlayer
 AudioStreamPlayer2D

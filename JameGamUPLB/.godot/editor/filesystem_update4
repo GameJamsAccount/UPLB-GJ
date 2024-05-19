@@ -1,10 +1,7 @@
-res://Scenes/main.tscn
-res://Scenes/character.gd
-res://Scenes/enemy.gd
-res://HealthBar/HealthBar.gd
+res://game_over.tscn
+res://game_over.gd
 res://Scenes/character.tscn
-res://HealthBar/healthbar_2.tscn
-res://HealthBar/healthbar_2.gd
+res://Scenes/character.gd
 res://Scenes/enemy.tscn
 res://JAMGAM/menu.tscn
 res://JAMGAM/Chapter.tscn
@@ -12,11 +9,12 @@ res://JAMGAM/options.tscn
 res://JAMGAM/video.tscn
 res://JAMGAM/audio.tscn
 res://JAMGAM/guide.tscn
-res://HealthBar/HealthBar.tscn
+res://Scenes/main.tscn
 res://Scenes/main_bg.tscn
 res://Scenes/Floor.tscn
 res://Scenes/blcok.tscn
 res://Scenes/sign.tscn
 res://global/main_menu.tscn
+res://HealthBar/HealthBar.tscn
 res://pause/pause_menu.tscn
 res://Scenes/abilities.tscn
