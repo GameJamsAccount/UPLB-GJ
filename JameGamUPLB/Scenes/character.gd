@@ -1,8 +1,16 @@
 extends CharacterBody2D
 
+@onready var healthbar =$Healthbar2
+
 const GRAVITY : int  = 4200
 const JUMP_SPD: int = -1800
 var can_attack = true
+
+var maxHealth = 100
+var health = 98
+
+func _ready():
+	healthbar.set_health_bar(health, maxHealth)
 
 func _physics_process(delta):
 	velocity.y += GRAVITY * delta
@@ -41,3 +49,10 @@ func _physics_process(delta):
 
 func _on_timer_timeout():
 	can_attack = true
+	
+func take_damage(damage:int):
+	health -= damage
+	if health < 0: get_tree().quit()
+	healthbar.change_health(-damage)
+	
+

@@ -1,5 +1,6 @@
 CollisionShape2D
 Area2D
+ProgressBar
 CenterContainer
 VBoxContainer
 Button
@@ -11,4 +12,3 @@ AudioStreamPlayer2D
 GridContainer
 ColorRect
 MarginContainer
-HBoxContainer

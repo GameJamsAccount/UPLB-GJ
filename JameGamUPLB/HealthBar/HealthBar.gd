@@ -3,6 +3,10 @@ extends Control
 @onready var Healthbar1 = $Healthbar1
 @onready var Healthbar2 = $Healthbar2
 
+func set_health_bar(health, maxHealth):
+	max_value
+
+
 func change_health(newValue):
 	var oldValue = Healthbar2.value
 	var stylebox : StyleBox = Healthbar1.get_theme_stylebox("fill")

@@ -1,6 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://vm4bktkxny5k"]
-
-[ext_resource type="Script" path="res://HealthBar/HealthBar.gd" id="1_tpgjv"]
+[gd_scene load_steps=5 format=3 uid="uid://vm4bktkxny5k"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_01mtv"]
 skew = Vector2(1, 0)
@@ -42,7 +40,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tpgjv")
 
 [node name="Healthbar1" type="ProgressBar" parent="."]
 layout_mode = 0

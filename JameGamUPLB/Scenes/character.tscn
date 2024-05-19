@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://2k5833u80x1h" path="res://TestSprites/Small slash FX/small_sting.png" id="4_g2ogx"]
 [ext_resource type="Texture2D" uid="uid://d1f11r1bd32vg" path="res://image_2024-05-18_163249692-removebg-preview.png" id="5_yy53s"]
 [ext_resource type="Texture2D" uid="uid://dujvucwrducqk" path="res://TestSprites/image_2024-05-18_164825726-removebg-preview.png" id="6_tus5l"]
+[ext_resource type="PackedScene" uid="uid://djjni2gvwo737" path="res://HealthBar/healthbar_2.tscn" id="7_5s0dk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6e382"]
 atlas = ExtResource("1_e60lr")
@@ -447,9 +448,6 @@ size = Vector2(10.2592, 28.1612)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ybynq"]
 size = Vector2(20, 6.06508)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2ou3"]
-size = Vector2(12.0318, 15.2913)
-
 [node name="Character" type="CharacterBody2D"]
 scale = Vector2(13.215, 13.215)
 script = ExtResource("1_wktub")
@@ -499,17 +497,17 @@ collision_mask = 24
 [node name="Attack1" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(19.6585, 0.826712)
 shape = SubResource("RectangleShape2D_qvy8e")
-disabled = true
 
 [node name="Attack2" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(35.3386, 1.13507)
 shape = SubResource("RectangleShape2D_ybynq")
 disabled = true
 
-[node name="Damage" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Damage"]
-position = Vector2(0.0378357, 4.23761)
-shape = SubResource("RectangleShape2D_d2ou3")
+[node name="Healthbar2" parent="." instance=ExtResource("7_5s0dk")]
+offset_left = -9.08059
+offset_top = -13.3939
+offset_right = 206.919
+offset_bottom = 13.6061
+scale = Vector2(0.0898073, 0.170338)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
